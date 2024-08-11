@@ -4,7 +4,7 @@ import styles from '../styles/CustomerCard.module.css';
 interface CustomerCardProps {
   customer: { id: number, name: string, title: string, details: string };
   isSelected: boolean;
-  onSelect: (customer: { id: number, name: string, title: string, details: string }) => void;
+  onSelect: (customeDetails: Customer) => void;
 }
 
 const CustomerCard = ({ customer, isSelected, onSelect }: CustomerCardProps) => {
