@@ -1,8 +1,9 @@
 
 import styles from '../styles/CustomerCard.module.css';
+import { Customer } from '../data/customers';
 
 interface CustomerCardProps {
-  customer: { id: number, name: string, title: string, details: string };
+  customer: Customer;
   isSelected: boolean;
   onSelect: (customeDetails: Customer) => void;
 }
