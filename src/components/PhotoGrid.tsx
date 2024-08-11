@@ -10,6 +10,10 @@ const PhotoGrid = ({ photos }: PhotoGridProps) => {
   const [currentPhotos, setCurrentPhotos] = useState<string[]>(photos);
 
   useEffect(() => {
+    setCurrentPhotos(photos);
+  }, [photos]);
+
+  useEffect(() => {
     const interval = setInterval(() => {
       const newPhotos = photos.map(
         () => `https://picsum.photos/200?random=${Math.floor(Math.random() * 1000)}`

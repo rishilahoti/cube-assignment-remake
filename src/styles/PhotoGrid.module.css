@@ -1,6 +1,7 @@
 .grid {
-    width: 65%;
+    width: auto;
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   }
@@ -9,5 +10,8 @@
     width: 100%;
     height: auto;
     border-radius: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
     
   }

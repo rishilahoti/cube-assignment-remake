@@ -5,7 +5,7 @@ import { Customer } from '../data/customers';
 interface CustomerCardProps {
   customer: Customer;
   isSelected: boolean;
-  onSelect: (customeDetails: Customer) => void;
+  onSelect: (customerDetails: Customer) => void;
 }
 
 const CustomerCard = ({ customer, isSelected, onSelect }: CustomerCardProps) => {

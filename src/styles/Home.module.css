@@ -1,21 +1,39 @@
 .container {
     display: flex;
     flex-direction: row;
-    width: 95%;
-    height: 95%;
+    width: 99%;
+    height: 99%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+    border-radius: 8px;
   }
   
   .customerList {
     width: 30%;
-    padding: 20px;
+    padding-right: 5px;
     border-right: 1px solid #ddd;
     overflow-y: auto;
   }
   
   .customerDetails {
     width: 70%;
-    padding: 20px;
   }
   
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .customerList {
+      width: 100%;
+      height: 30%;
+      border-right: none;
+      border-bottom: 1px solid #881717;
+    }
+  
+    .customerDetails {
+      width: 100%;
+      height: auto;
+    }
+    
+  }
