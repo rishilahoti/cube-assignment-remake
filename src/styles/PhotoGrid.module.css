@@ -1,0 +1,13 @@
+.grid {
+    width: 65%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .photo {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    
+  }

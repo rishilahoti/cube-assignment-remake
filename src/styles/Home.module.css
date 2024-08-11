@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    height: 95%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+  
+  .customerList {
+    width: 30%;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+  }
+  
+  .customerDetails {
+    width: 70%;
+    padding: 20px;
+  }
+  

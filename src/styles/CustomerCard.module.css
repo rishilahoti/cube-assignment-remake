@@ -1,0 +1,17 @@
+.card {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .selected {
+    background-color: #e0e0e0;
+    border-color: #b0b0b0;
+  }
